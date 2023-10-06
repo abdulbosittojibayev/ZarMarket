@@ -47,6 +47,7 @@ body {
     align-items: center;
     width: 100%;
     font-weight: 900;
+    font-size: 15px;
 }
 
 .location div {
@@ -87,7 +88,6 @@ body {
 /* Navbar  */
 #navbar {
     --navbar-height: 64px;
-    position: fixed;
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
     left: 0;
@@ -100,6 +100,7 @@ body {
     justify-content: space-between;
     height: 100%;
     align-items: center;
+    font-size: 20px;
 }
 
 .navbar-item {
@@ -241,6 +242,72 @@ body {
         flex-direction: row;
         width: 100%;
         height: 100%;
+    }
+}
+
+/* Swiper  */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.nerlift {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+
+/* Brands  */
+.slick-brand {
+    padding: 28px 23px;
+}
+
+.slick-brand-div {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.slick-brand-div div {
+    border: 1px solid rgb(255, 255, 255);
+    width: 130px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+}
+
+.slick-brand-div div:hover {
+    margin-top: -10px;
+}
+
+.slick-brand-div div img {
+    width: 78px;
+}
+
+@media (min-width: 1500px) {
+    .slick-img figure img {
+        height: 500px;
     }
 }
 
